@@ -67,6 +67,18 @@ body{
   font-weight: 400;
 }
 
+.text-data .tag-line{
+  font-size: 30px;
+  font-weight: 700;
+  color: #656e72;
+  z-index: .1;
+
+}
+.text-data .tag-line:hover{
+  color: black;
+  z-index: 1;
+}
+
 .profile-card .social-icons {
   display: flex;
   justify-content: center;
