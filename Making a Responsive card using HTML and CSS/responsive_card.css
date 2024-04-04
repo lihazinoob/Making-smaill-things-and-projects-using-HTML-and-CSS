@@ -67,24 +67,32 @@ body{
   font-weight: 400;
 }
 
-.profile-card .social-links {
+.profile-card .social-icons {
   display: flex;
   justify-content: center;
   /* margin-top: 20px; */
+  margin-top: 15px;
 }
 
-.social-links .icon{
+.profile-card .social-icons .icon{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+   color: #fff; 
   font-size: 18 px;
-  
+
   height: 34px;
   width: 34px;
   border-radius: 50%;
-  background-color: #f4f4f4;
+  background-color: black;
   margin: 0 8px;
   text-decoration: none;
+  z-index: .1;
+}
 
+.profile-card .social-icons .icon:hover{
+  background-color: #f4f4f4;
+  color: black;
+  border: 2px solid black;
+  z-index: 1;
 }
