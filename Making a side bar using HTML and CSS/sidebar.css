@@ -33,7 +33,8 @@ body{
 
 .sidebar_menu .main-logo{
   background: rgba(42,44,46,.1);
-  
+  color: #fff;
+  text-decoration: none;
   position: relative;
   height: 60px;
   width: 100%;
@@ -52,7 +53,7 @@ body{
   /* font-size: 25px; */
   /* font-weight: 500; */
   position: absolute;
-  left: 50px;
+  /* left: 50px; */
   line-height: 30px;
   text-decoration: none;
 
@@ -61,7 +62,22 @@ body{
 .sidebar_menu .menu_bar li{
   list-style: none;
   padding: 4px 0px;
+  transition: ease 0.3s;
 
+}
+.sidebar_menu .menu_bar a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  /* display: block; */
+  /* padding: 10px 20px; */
+  transition: all 0.5s;
+}
+
+.sidebar_menu .menu_bar li:hover{
+  border-left: 1px solid #fff;
+  box-shadow:  0 0 4px rgba(255,255,255,.1);
 }
 
 .sidebar_menu .social_media{
@@ -73,3 +89,20 @@ body{
   padding: 10px 0;
 }
 
+.sidebar_menu .social_media a{
+  
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 8px;
+  transition: ease 0.5s;
+  z-index: 1;
+}
+ 
+.sidebar_menu .social_media a:hover{
+  /* background-color: #f4f4f4; */
+  /* color: black;
+  border: 2px solid black; */
+  z-index: 1;
+  font-size: 30px;
+}
