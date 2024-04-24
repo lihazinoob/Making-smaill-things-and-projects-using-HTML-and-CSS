@@ -11,7 +11,7 @@ body{
   background-color: var(--black-color);
   color: white;
   margin: 0;
-  font-size: 12px;
+  font-size: 18px;
 }
 nav {
   height: 100%;
@@ -37,4 +37,51 @@ header
 }
 header a{
   margin-right: 40px;
+}
+
+.carousel{
+  margin-left:2em;
+  margin-right:2em;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+  position: relative;
+
+}
+.carousel .list .item{
+  position: absolute;
+  inset: 0 0 0 0;
+
+}
+.carousel .list .item img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.carousel .list .item .content{
+  position: absolute;
+  top: 20%;
+  width: 1140px;
+  max-width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 0 5px 10px #0004;
+
+}
+.carousel .list .item .content .des{
+  font-size: 1.5em;
+  font-weight: 500;
+  /* margin-bottom: 1em; */
+  letter-spacing: 10px;
+  z-index: .5;
+  transition: .2s ease;
+}
+
+.carousel .list .item .content .des:hover{
+  font-size: 1.8rem;
+  z-index: 1;
 }
