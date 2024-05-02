@@ -112,6 +112,7 @@ span{
   position: relative;
   border-radius: 50%;
   width: 32vw;
+  height: 32vw;
   object-fit: cover;
   box-shadow: 0 0 25px var(--main-color);
   cursor : pointer;
@@ -235,3 +236,81 @@ span{
   }
 
 }
+/* Design of the about section */
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 8rem;
+}
+.about .profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+  height: 100%;
+  background: var(--second-bg-color);
+  /* box-shadow: ; */
+  box-shadow: 0 0 25px var(--main-color);
+  /* margin: 20px 20px; */
+  border-radius: 24px;
+  padding: 25px;
+  transition: .4s ease-in-out;
+}
+
+.about .profile-card:hover{
+  transform: scale(1.1);
+  box-shadow:  0 0 50px var(--main-color), 
+               0 0 100px var(--main-color);
+  cursor: pointer;             
+}
+
+.about .image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius:  50%;
+  background-color: var(--main-color);
+  padding: 2.5px;
+  
+}
+
+.image .profile-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* border: 2.5px solid white; */
+}
+
+.about .profile-card .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.text-data .name{
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.text-data .destination{
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.text-data .tag-line{
+  font-size: 30px;
+  font-weight: 700;
+  /* color: #656e72; */
+  z-index: .1;
+
+
+}
+
+
