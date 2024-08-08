@@ -68,3 +68,20 @@ body{
   font-size: 1.7em;
   z-index: 2;
 }
+
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  font-size: 1.2em;
+}
+
+.informationcard{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  font-size: 3em;
+  color: black;
+}

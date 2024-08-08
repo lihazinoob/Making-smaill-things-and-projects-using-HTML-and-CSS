@@ -16,6 +16,7 @@ function api(city)
   fetch('http://api.weatherapi.com/v1/current.json?key=ab929d9e99054f30a08155141240808&q='+city)
   .then(response => response.json())
   .then(data => console.log(data));
+  
 
 }
 
