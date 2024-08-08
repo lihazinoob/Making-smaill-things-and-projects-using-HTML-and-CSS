@@ -1,4 +1,6 @@
 const loc = document.getElementById('location');
 function startsearch(){
-  loc.innerHTML = "Loading...";
+  let searchqueary = document.getElementById('searchtext').value;
+  loc.innerHTML = searchqueary;
+  document.getElementById('searchtext').value = '';
 }
