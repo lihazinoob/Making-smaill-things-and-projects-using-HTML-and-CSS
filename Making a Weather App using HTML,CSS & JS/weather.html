@@ -6,6 +6,7 @@
   <title>Weather App</title>
   <link rel="stylesheet" href="weather.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
 </head>
 <body>
   <div class="card">
@@ -13,10 +14,15 @@
     <div class="searchbar">
       <input type="text" placeholder="Search.. ">
       <div class="searchicon">
-        <i class='bx bx-search'></i>
+        <i class='bx bx-search' id = "search" onclick="startsearch()"></i>
       </div>
+    </div>
+    <div class="location" id = "location">
+
     </div>
     
   </div>
+
+  <script src="weather.js"></script>
 </body>
 </html>
