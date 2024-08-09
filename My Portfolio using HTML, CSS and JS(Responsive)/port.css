@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 :root{
   /* dark theme variables */
   --primary-color: #E6AD3C;
@@ -8,7 +9,7 @@
   --background-color: black;
 }
 
-body.light{
+.light{
   /* light theme variables */
   --primary-color: #1E1E1E;
   --secondary-color: #E6AD3C;
@@ -33,6 +34,7 @@ body{
   top: 0; /* Ensures it stays at the top */
   width: 100%; /* Stretches the navbar across the width */
   z-index: 2;
+  flex-wrap: wrap;
 
   /* z-index: 2; */
 }
@@ -47,15 +49,23 @@ body{
   padding-right: 2em;
 }
 
-.navbar .list a{
+.navbar .list a {
   font-size: 1.5rem;
   font-weight: 400;
-  color:var(--tertiary-color);
+  color: var(--tertiary-color);
   padding: 1em;
   text-decoration: none;
-  
-
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for both transform and color */
+  position: relative; /* Ensure proper positioning for z-index */
 }
+
+.navbar .list a:hover {
+  color: var(--primary-color); /* Change text color on hover */
+  cursor: pointer;
+  transform: scale(2) translateY(-5px); /* Grow and move up */
+  z-index: 2; /* Ensure the hovered item appears on top */
+}
+
 
 .navbar .list i{
   font-size: 1.5rem;
@@ -65,9 +75,42 @@ body{
 .navbar .list i:hover{
   color: var(--primary-color);
   cursor: pointer;
+  
 }
 
-.navbar .list a:hover{
-  /* color: var(--primary-color) */
-  cursor: pointer;
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1em; /* Reduce padding */
+  }
+
+  .navbar .name {
+    font-size: 1.5rem; /* Reduce font size */
+    padding-left: 1em; /* Adjust padding to fit smaller screens */
+  }
+
+  .navbar .list a, .navbar .list i {
+    font-size: 1.2rem; /* Reduce font size for links and icons */
+    padding: 0.5em; /* Reduce padding around the items */
+  }
+}
+
+/* Adjustments for mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5em; /* Further reduce padding for very small screens */
+  }
+
+  .navbar .name {
+    font-size: 1.2rem; /* Further reduce font size */
+    padding-left: 0.5em;
+  }
+
+  .navbar .list a, .navbar .list i {
+    font-size: 1rem; /* Reduce font size to fit mobile screens */
+    padding: 0.3em; /* Reduce padding further */
+  }
 }

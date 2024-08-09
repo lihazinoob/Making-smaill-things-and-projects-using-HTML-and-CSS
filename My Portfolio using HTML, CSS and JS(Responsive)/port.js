@@ -1,6 +1,7 @@
 const tog = document.getElementById('toggler');
 var Boolean = true;//Boolean true hoile dark mode on hobe
 tog.addEventListener('click', function(){
+  console.log(Boolean);
   if(Boolean)
   {
     document.body.classList.toggle('light');
@@ -8,7 +9,7 @@ tog.addEventListener('click', function(){
   }
   else
   {
-    document.body.classList.toggle('root');
+    document.body.classList.toggle('dark');
     Boolean = true;
   }
 });
