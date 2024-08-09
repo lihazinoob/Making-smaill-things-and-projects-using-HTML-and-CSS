@@ -8,7 +8,7 @@
   --background-color: black;
 }
 
-.light{
+body.light{
   /* light theme variables */
   --primary-color: #1E1E1E;
   --secondary-color: #E6AD3C;
@@ -61,4 +61,13 @@ body{
   font-size: 1.5rem;
   color: var(--tertiary-color);
   padding: 1em;
+}
+.navbar .list i:hover{
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.navbar .list a:hover{
+  /* color: var(--primary-color) */
+  cursor: pointer;
 }
