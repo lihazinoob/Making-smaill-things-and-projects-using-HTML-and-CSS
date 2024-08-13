@@ -107,6 +107,8 @@ body{
   margin-bottom: 1em;
   color: var(--tertiary-color);
 }
+
+
 .home .imagecontainer{
   aspect-ratio: 1 / 1; /* Maintains a square aspect ratio */
   height: auto;
@@ -151,6 +153,12 @@ body{
     font-size: 1.2rem; /* Reduce font size for links and icons */
     padding: 0.5em; /* Reduce padding around the items */
   }
+  .home .tagline h1{
+    font-size: 1.5rem;
+  }
+  .home .tagline p{
+    font-size: 1rem;
+  }
 }
 
 /* Adjustments for mobile screens (480px and below) */
@@ -167,5 +175,11 @@ body{
   .navbar .list a, .navbar .list i {
     font-size: 1rem; /* Reduce font size to fit mobile screens */
     padding: 0.3em; /* Reduce padding further */
+  }
+  .home .tagline h1{
+    font-size: 1rem;
+  }
+  .home .tagline p{
+    font-size: .75rem;
   }
 }
