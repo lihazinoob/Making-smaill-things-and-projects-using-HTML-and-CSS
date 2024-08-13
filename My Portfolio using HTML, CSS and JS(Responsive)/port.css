@@ -230,6 +230,39 @@ body{
 }
 
 
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 4em;
+  
+}
+
+.about .aboutimagecontainer{
+  padding-left: 4em;
+  aspect-ratio: 1 / 1; /* Maintains a square aspect ratio */
+  height: auto;
+  width: 50%; 
+  transition: 0.3s ease-in-out;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+
+
+.about .aboutimagecontainer img{
+  height: 80%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 2em;
+  box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
+  transition: .3s ease-in-out; /* Smooth transition */
+}
 
 
 
