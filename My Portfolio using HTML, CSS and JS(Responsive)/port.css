@@ -215,13 +215,19 @@ body{
 
 .home .tagline .socialcontainer a i{
   font-size: 1.2rem;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   padding: 1em;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   /* box-sizing: content-box; */
   border-radius: 50%;
   box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
 }
+.home .tagline .socialcontainer a i:hover{
+  transform: scale(1.5);
+  box-shadow: 0em 0em 0em var(--primary-color); /* Adds a subtle shadow */
+  cursor:help;
+}
+
 
 
 
