@@ -101,12 +101,21 @@ body{
   font-weight: 600;
   margin-bottom: 1em;
 }
+.home .tagline p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+  color: var(--tertiary-color);
+}
 .home .imagecontainer{
-  width: 50%;
-  height: 100vh;
+  aspect-ratio: 1 / 1; /* Maintains a square aspect ratio */
+  height: auto;
+  width: 50%; 
+  transition: 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .home .imagecontainer img {
   height: 50%;
@@ -114,8 +123,15 @@ body{
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
+  transition: .3s ease-in-out; /* Smooth transition */
 }
 
+.home .imagecontainer img:hover{
+  transform: scale(1.1);
+  box-shadow: 0em 0em 2.8em var(--primary-color); /* Adds a subtle shadow */
+  cursor:help;
+  
+}
 
 
 
