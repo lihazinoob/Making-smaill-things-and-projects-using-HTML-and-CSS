@@ -253,6 +253,7 @@ body{
 
 
 .about .aboutimagecontainer img{
+  margin-top: 4em;
   height: 80%;
   width: 50%;
   object-fit: cover;
@@ -276,9 +277,10 @@ body{
 }
 .about .aboutcontent p{
   font-size: 1.5rem;
-  font-weight: 150;
+  font-weight: 300;
   margin-bottom: 1em;
   color: var(--tertiary-color);
+  
 }
 
 
@@ -320,6 +322,26 @@ body{
     font-size: .8rem;
     padding:.5em
   }
+
+  /* about section */
+  .about{
+    padding: 2em;
+  }
+  .about .aboutimagecontainer{
+    padding-left: 2em;
+  }
+  .about .aboutimagecontainer img{
+    height: 50%;
+    width: 50%;
+  }
+  .about .aboutcontent h1{
+    font-size: 2rem;
+  }
+  .about .aboutcontent p{
+    font-size: 1rem;
+  }
+
+
 }
 
 /* Adjustments for mobile screens (480px and below) */
@@ -356,4 +378,23 @@ body{
     font-size: .6rem;
     padding:.2em
   }
+  /* About Section */
+
+  .about{
+    padding: 1em;
+  }
+  .about .aboutimagecontainer{
+    padding-left: 1em;
+  }
+  .about .aboutimagecontainer img{
+    height: 40%;
+    width: 40%;
+  }
+  .about .aboutcontent h1{
+    font-size: 1.5rem;
+  }
+  .about .aboutcontent p{
+    font-size: .75rem;
+  }
+
 }
