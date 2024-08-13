@@ -204,6 +204,26 @@ body{
   cursor:help;
   
 }
+.home .tagline .socialcontainer{
+  margin-top: 1.5em;
+  margin-left: .1em;
+}
+.home .tagline .socialcontainer a{
+  text-decoration: none;
+  padding: 1em;
+}
+
+.home .tagline .socialcontainer a i{
+  font-size: 1.2rem;
+  color: var(--tertiary-color);
+  padding: 1em;
+  transition: 0.3s ease-in-out;
+  /* box-sizing: content-box; */
+  border-radius: 50%;
+  box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
+}
+
+
 
 
 
