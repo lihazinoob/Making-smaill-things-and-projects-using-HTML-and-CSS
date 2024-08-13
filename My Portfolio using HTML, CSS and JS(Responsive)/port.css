@@ -22,6 +22,7 @@ body{
   color: var(--primary-color);
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 .navbar{
   display: flex;
@@ -257,6 +258,18 @@ body{
   .home .tagline p{
     font-size: 1rem;
   }
+  .home .tagline .socialcontainer{
+    margin-top: 1em;
+
+  }
+  .home .tagline .socialcontainer a{
+    /* font-size: 1rem; */
+    padding:.5em
+  }
+  .home .tagline .socialcontainer a i{
+    font-size: .8rem;
+    padding:.5em
+  }
 }
 
 /* Adjustments for mobile screens (480px and below) */
@@ -279,5 +292,18 @@ body{
   }
   .home .tagline p{
     font-size: .75rem;
+  }
+
+  .home .tagline .socialcontainer{
+    margin-top: .8em;
+
+  }
+  .home .tagline .socialcontainer a{
+    /* font-size: 1rem; */
+    padding:.4em
+  }
+  .home .tagline .socialcontainer a i{
+    font-size: .6rem;
+    padding:.2em
   }
 }
