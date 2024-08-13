@@ -78,6 +78,45 @@ body{
   
 }
 
+.home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  
+  
+}
+.home .tagline{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home .tagline h1{
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.home .imagecontainer{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .imagecontainer img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
+}
+
+
 
 
 
