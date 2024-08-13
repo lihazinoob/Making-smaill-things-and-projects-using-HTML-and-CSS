@@ -80,6 +80,7 @@ body{
 
 .home{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-color);
@@ -127,16 +128,16 @@ body{
 }
 
 .home .tagline h1{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1em;
 }
-.home .tagline p{
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 1em;
+.home .tagline h1 span{
   color: var(--tertiary-color);
+  font-size: 3rem;
+  font-weight: 700;
 }
+
 
 @keyframes typing{
   0%{
