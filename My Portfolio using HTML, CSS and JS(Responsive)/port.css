@@ -247,10 +247,7 @@ body{
   height: auto;
   width: 50%; 
   transition: 0.3s ease-in-out;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
+  
 }
 
 
@@ -262,6 +259,26 @@ body{
   border-radius: 2em;
   box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
   transition: .3s ease-in-out; /* Smooth transition */
+}
+
+.about .aboutcontent{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about .aboutcontent h1{
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.about .aboutcontent p{
+  font-size: 1.5rem;
+  font-weight: 150;
+  margin-bottom: 1em;
+  color: var(--tertiary-color);
 }
 
 
