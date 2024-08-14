@@ -409,10 +409,20 @@ body{
   border-color: var(--primary-color);
   border-radius: .5em;
   transition: .3s ease-in-out; /* Smooth transition */
+  position: relative;
+  display: inline-block;
 }
 .skills .skillscontainer .box:hover{
   transform: translateY(-0.5em);
   box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
+}
+.skills .skillscontainer .box .skillsbar{
+  display: none;
+  position: absolute;
+}
+.skills .skillscontainer .box .clicked {
+  display: block;
+
 }
 
 
