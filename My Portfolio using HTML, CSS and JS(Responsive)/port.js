@@ -36,11 +36,17 @@ window.addEventListener('scroll',function()
 
 );
 
-// Here I am trying to creating a dropdown menu in Skills section
-function clickedtoggle()
-{
-  document.querySelectorAll('.skillsbar').forEach(element =>
+let arrow = document.querySelectorAll('.droparrow');
+arrow.forEach(element =>
+  {
+    // Trying to add dropdown menu
+    element.addEventListener('click',function()
     {
-      element.classList.toggle('clicked');
+      let drop = document.querySelector('.skillsbar');
+      drop.forEach(e2=>
+        {
+          e2[element].classList.toggle('clicked');
+        })
     });
-}
+  });
+
