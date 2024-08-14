@@ -325,6 +325,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 5em;
 }
 .education h1{
   font-size: 3rem;
@@ -363,6 +364,15 @@ body{
   color:var(--tertiary-color);
   font-size: 1rem;
 
+}
+.animation .educationcontainer .box{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+}
+.animation.active .educationcontainer .box {
+  opacity: 1;
+  transform: translateY(0); /* Brings the element back to its original position */
 }
 
 
