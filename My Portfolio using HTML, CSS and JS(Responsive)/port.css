@@ -334,15 +334,37 @@ body{
 .education .educationcontainer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
+  gap: 1.2em;
   padding: 2em;
-  
+
 }
 
 .education .educationcontainer .box{
-  width: 100%;
-  background-color: var(--tertiary-color);
+  padding: 1em;
+  background-color: var(--secondary-color) ;
+  box-shadow: 0em 0em 1.4em var(--secondary-color); /* Adds a subtle shadow */
+  border-color: var(--primary-color);
+  border-radius: .5em;
+  transition: .3s ease-in-out; /* Smooth transition */
+  
 }
+.education .educationcontainer .box:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
+
+}
+.education .educationcontainer .box h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  
+  color: var(--tertiary-color);
+}
+.education .educationcontainer .box span{
+  color:var(--tertiary-color);
+  font-size: 1rem;
+
+}
+
 
 
 
