@@ -101,17 +101,30 @@ body{
 
 }
 
-.animation .aboutimagecontainer{
+.animation .aboutimagecontainer img{
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 /* State when the 'active' class is added */
-.animation.active .aboutimagecontainer {
+.animation.active .aboutimagecontainer img {
   opacity: 1;
   transform: translateX(0); /* Brings the element back to its original position */
 }
+.animation .aboutcontent{
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* State when the 'active' class is added */
+.animation.active .aboutcontent {
+  opacity: 1;
+  transform: translateX(0); /* Brings the element back to its original position */
+}
+
+
 
 
 
