@@ -349,11 +349,7 @@ body{
   transition: .3s ease-in-out; /* Smooth transition */
   
 }
-.education .educationcontainer .box:hover {
-  transform: translateY(-0.5em);
-  box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
 
-}
 .education .educationcontainer .box h2{
   font-size: 1.5rem;
   font-weight: 600;
@@ -374,6 +370,32 @@ body{
   opacity: 1;
   transform: translateY(0); /* Brings the element back to its original position */
 }
+
+.education .educationcontainer .box:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
+}
+/* Skills Section */
+
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5em;
+}
+.skills h1{
+  font-size: 3rem;
+  font-weight: 600;
+  /* margin-bottom: 1em; */
+}
+.skills .skills_subtitle{
+  font-size: 1.5rem;
+  font-weight: 300;
+  /* margin-bottom: 1em; */
+  color: var(--tertiary-color);
+}
+
 
 
 
