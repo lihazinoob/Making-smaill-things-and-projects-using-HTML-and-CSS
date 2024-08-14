@@ -89,6 +89,7 @@ body{
   
   
 }
+
 .home .tagline{
   width: 50%;
   height: 100vh;
@@ -96,7 +97,23 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+
 }
+
+.animation .aboutimagecontainer{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+}
+
+/* State when the 'active' class is added */
+.animation.active .aboutimagecontainer {
+  opacity: 1;
+  transform: translateX(0); /* Brings the element back to its original position */
+}
+
+
 
 
 .home .tagline .dynamictext ul li

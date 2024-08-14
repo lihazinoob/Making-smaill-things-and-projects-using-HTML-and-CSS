@@ -21,7 +21,7 @@ window.addEventListener('scroll',function()
   animationselector.forEach(element =>
     {
       let top = this.window.scrollY;
-      let offset = element.offsetTop;
+      let offset = element.offsetTop-100;
       let height = element.offsetHeight;
       if(top > offset && top < offset + height)
       {
