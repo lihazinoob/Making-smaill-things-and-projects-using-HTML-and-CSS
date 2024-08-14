@@ -15,3 +15,23 @@ tog.addEventListener('click', function(){
 });
 
 // Here I am trying to add onscroll animation
+let animationselector = document.querySelectorAll('.animation');
+window.addEventListener('scroll',function()
+{
+  animationselector.forEach(element =>
+    {
+      let top = this.window.scrollY;
+      let offset = element.offsetTop;
+      let height = element.offsetHeight;
+      if(top > offset && top < offset + height)
+      {
+        element.classList.add('active');
+      }
+      else
+      {
+        element.classList.remove('active');
+      }
+    })
+}
+
+);
