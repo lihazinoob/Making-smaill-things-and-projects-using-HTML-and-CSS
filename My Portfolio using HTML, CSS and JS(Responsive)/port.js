@@ -13,3 +13,5 @@ tog.addEventListener('click', function(){
     Boolean = true;
   }
 });
+
+// Here I am trying to add onscroll animation
