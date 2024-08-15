@@ -402,7 +402,7 @@ body{
   padding: 2em;
 
 }
-.skills .skillscontainer .box{
+.skills .skillscontainer .box .boxhead{
   padding: 1em;
   background-color: var(--secondary-color) ;
   box-shadow: 0em 0em 1.4em var(--secondary-color); /* Adds a subtle shadow */
@@ -412,7 +412,7 @@ body{
   position: relative;
   display: inline-block;
 }
-.skills .skillscontainer .box:hover{
+.skills .skillscontainer .box .boxhead:hover{
   transform: translateY(-0.5em);
   box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
 }
@@ -425,7 +425,14 @@ body{
 
 }
 
-
+.skills .skillscontainer .box .title{
+  display: flex;
+  flex-direction: row;
+  justify-content: wrap;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.5rem;
+}
 
 
 
