@@ -489,6 +489,30 @@ body{
   font-size: 1.5rem;
 }
 
+/* Projects Section */
+
+.projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5em;
+}
+.projects h1{
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  padding-top: 5em;
+}
+
+.projects .project_subtitle{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1em;
+  color: var(--tertiary-color);
+  
+}
+
 
 
 
