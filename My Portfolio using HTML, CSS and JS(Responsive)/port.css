@@ -499,18 +499,34 @@ body{
   padding-top: 5em;
 }
 .projects h1{
+  transform: translateX(-500%);
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1em;
   padding-top: 5em;
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.projects.active h1{
+  transform: translateX(0);
+  transition: transform 1s ease-in-out ;
+  opacity: 1;
 }
 
 .projects .project_subtitle{
+  transform: translateX(100%);
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 1em;
   color: var(--tertiary-color);
+  opacity: 0;
+
   
+}
+.projects.active .project_subtitle{
+  transform: translateX(0);
+  transition: transform 1s ease-in-out ;
+  opacity: 1;
 }
 
 .projectscontainer {
@@ -518,6 +534,13 @@ body{
   grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
   gap: 1em; /* Add space between the grid items */
   padding:2em;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.projects.active .projectscontainer{
+  transform: translateY(0);
+  transition: transform 1s ease-in-out ;
+  opacity: 1;
 }
 
 .projectsbox {
@@ -562,7 +585,7 @@ body{
   flex-direction: column;
   text-align: center;
   opacity: 0; /* Hide the layer by default */
-  transition: 0.3s ease-in-out; /* Smooth transition */
+  transition: 1s ease-in-out; /* Smooth transition */
 }
 
 .projectsbox .layer h3{
