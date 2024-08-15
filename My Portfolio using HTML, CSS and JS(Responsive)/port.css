@@ -517,25 +517,73 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
   gap: 1em; /* Add space between the grid items */
+  padding:2em;
 }
 
 .projectsbox {
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 1em;
+  
+  
+}
+.projectsbox .projectsimage{
   background-color: var(--secondary-color);
-  box-shadow: 0em 0em 1.4em var(--secondary-color); /* Adds a subtle shadow */
-  border-radius: 0.5em;
   transition: 0.3s ease-in-out; /* Smooth transition */
+  border-radius: 0.5em;
+}
+.projectsbox .projectsimage:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
 }
 
 .projectsimage img {
   width: 100%; /* Make the image responsive to the container */
-  height: auto; /* Maintain the aspect ratio */
+  height: 100%; /* Maintain the aspect ratio */
   object-fit: cover; /* Ensure the image covers the entire container */
   border-radius: 0.5em;
-  box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
+  /* box-shadow: 0em 0em 1.4em var(--primary-color); Adds a subtle shadow */
+}
+
+.projectsbox .layer{
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0; /* Hide the layer by default */
+  transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+.projectsbox .layer h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--tertiary-color);
+  margin-bottom: 0.5em;
+}
+.projectsbox .layer i{
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+  padding: 0.5em;
+  transition: 0.5s ease-in-out;
+}
+.projectsbox .layer i:hover{
+  color: var(--primary-color);
+  cursor:help;
+}
+.projectsbox:hover .layer{
+  height: 100%;
+  opacity: 1; /* Show the layer on hover */
 }
 
 
