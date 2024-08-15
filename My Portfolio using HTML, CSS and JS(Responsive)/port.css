@@ -384,17 +384,33 @@ body{
   flex-direction: column;
   padding-top: 5em;
 }
+
+
 .skills h1{
+  transform: translateX(-500%);
   font-size: 3rem;
   font-weight: 600;
   /* margin-bottom: 1em; */
+  opacity: 0;
+}
+.skills.active h1{
+  transform: translateX(0);
+  transition: transform 1s ease-in-out ;
+  opacity: 1;
 }
 .skills .skills_subtitle{
+  transform: translate(500%);
   font-size: 1.5rem;
   font-weight: 300;
   /* margin-bottom: 1em; */
   color: var(--tertiary-color);
+  opacity: 0;
 
+}
+.skills.active .skills_subtitle{
+  transform: translate(0);
+  transition: transform 1s ease-in-out ;
+  opacity: 1;
 }
 .skills .skillscontainer{
   margin-top: 3.5em;
@@ -403,8 +419,10 @@ body{
   gap: 1.2em;
   padding: 2em;
   /* overflow-x: hidden; */
+  
 
 }
+
 .skills .skillscontainer .box .boxhead{
   padding: 1em;
   background-color: var(--secondary-color) ;
@@ -470,6 +488,8 @@ body{
   gap: 1em;
   font-size: 1.5rem;
 }
+
+
 
 
 
