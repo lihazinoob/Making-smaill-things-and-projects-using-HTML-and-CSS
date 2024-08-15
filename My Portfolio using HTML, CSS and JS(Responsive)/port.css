@@ -400,6 +400,7 @@ body{
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2em;
   padding: 2em;
+  /* overflow-x: hidden; */
 
 }
 .skills .skillscontainer .box .boxhead{
@@ -411,6 +412,7 @@ body{
   transition: .3s ease-in-out; /* Smooth transition */
   position: relative;
   display: inline-block;
+  width: 80%;
 }
 .skills .skillscontainer .box .boxhead:hover{
   transform: translateY(-0.5em);
@@ -421,7 +423,16 @@ body{
   position: absolute;
 }
 .skills .skillscontainer .box .clicked {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: var(--secondary-color) ;
+  box-shadow: 0em 0em 1.4em var(--secondary-color); /* Adds a subtle shadow */
+  border-color: var(--primary-color);
+  border-radius: .5em;
+  transition: .3s ease-in-out; /* Smooth transition */
+  position: relative;
   display: block;
+  width: 80%;
 
 }
 
@@ -433,6 +444,7 @@ body{
   gap: 1em;
   font-size: 1.5rem;
 }
+
 
 
 
