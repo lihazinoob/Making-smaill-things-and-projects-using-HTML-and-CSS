@@ -624,10 +624,28 @@ body{
   flex: 1;
 }
 
+.contact .contactcontainer .addressholder i{
+  font-size: 2rem;
+  font-weight: 600;
+  /* margin-bottom: 1em; */
+}
+.contact .contactcontainer .addressholder h3{
+  font-size: 1.5rem;
+  font-weight: 300;
+  /* margin-bottom: 1em; */
+}
+.contact .contactcontainer .addressholder p{
+  font-size: 1rem;
+  font-weight: 150;
+  /* margin-bottom: 1em; */
+  color: var(--tertiary-color);
+}
+
 .contact .contactcontainer .messageholder{
   flex: 2;
 
 }
+
 
 
 
