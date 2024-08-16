@@ -503,7 +503,7 @@ body{
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1em;
-  padding-top: 5em;
+  /* padding-top: 5em; */
   transition: 1s ease-in-out;
   opacity: 0;
 }
@@ -595,8 +595,39 @@ body{
   opacity: 1; /* Show the layer on hover */
 }
 
+/* CSS for Contact ME section */
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5em;
+}
+.contact h1{
+  /* transform: translateX(-500%); */
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
 
+.contact .contactcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 10em;
+  /* background-color: var(--primary-color); */
+  
 
+}
+.contact .contactcontainer .addressholder{
+  flex: 1;
+}
+
+.contact .contactcontainer .messageholder{
+  flex: 2;
+
+}
 
 
 
