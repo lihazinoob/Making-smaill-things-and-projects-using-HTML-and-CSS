@@ -602,6 +602,7 @@ body{
   justify-content: center;
   flex-direction: column;
   padding-top: 5em;
+  padding-bottom: 5em;
 }
 .contact h1{
   /* transform: translateX(-500%); */
@@ -625,7 +626,7 @@ body{
 }
 
 .contact .contactcontainer .addressholder i{
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
   /* margin-bottom: 1em; */
 }
@@ -640,10 +641,54 @@ body{
   /* margin-bottom: 1em; */
   color: var(--tertiary-color);
 }
+.contact .contactcontainer .addressholder .mailaddress{
+  margin-top: 1em;
+  
+}
 
 .contact .contactcontainer .messageholder{
   flex: 2;
-
+  display: flex;
+  
+  flex-direction: column;
+  gap: 1em;
+}
+.contact .contactcontainer .messageholder form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+.contact .contactcontainer .messageholder input{
+  width: 100%;
+  padding: 1em;
+  border-radius: .5em;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+.contact .contactcontainer .messageholder form textarea{
+  width: 100%;
+  padding: 1em;
+  border-radius: .5em;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+.contact .contactcontainer .messageholder form .btn{
+  width: 50%;
+  padding: 1em;
+  border-radius: .5em;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.contact .contactcontainer .messageholder form .btn:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor:help;
 }
 
 
