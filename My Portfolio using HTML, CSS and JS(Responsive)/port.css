@@ -666,6 +666,7 @@ body{
   border: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
+  z-index: 10;
 }
 .contact .contactcontainer .messageholder form textarea{
   width: 100%;
@@ -674,6 +675,7 @@ body{
   border: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
+  z-index: 10;
 }
 .contact .contactcontainer .messageholder form .btn{
   width: 50%;
