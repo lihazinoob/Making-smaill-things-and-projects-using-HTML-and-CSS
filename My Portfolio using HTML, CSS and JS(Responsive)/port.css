@@ -513,21 +513,7 @@ body{
   opacity: 1;
 }
 
-.projects .project_subtitle{
-  transform: translateX(100%);
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 1em;
-  color: var(--tertiary-color);
-  opacity: 0;
 
-  
-}
-.projects.active .project_subtitle{
-  transform: translateX(0);
-  transition: transform 1s ease-in-out ;
-  opacity: 1;
-}
 
 .projectscontainer {
   display: grid;
